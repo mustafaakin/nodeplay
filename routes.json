@@ -1,0 +1,6 @@
+{
+	"get": {
+		"/"		: "index.js",
+		"/test"	: "another.js"
+	}
+}

@@ -108,6 +108,7 @@ fs.watch('routes.json', function (event, filename) {
 	if (filename == "routes.json" && event == "change") {
 		var currentTime = new Date();
 		if ( currentTime - lastWatchTime > 250){
+			console.log("[CHANGE]".cyan, "Detected change 'routes.json'");
 			lastWatchTime = currentTime;
 			initRoutes();
 		}
@@ -133,7 +134,7 @@ fs.watch('route', function (event, filename) {
 					// Ignore the duplicate change event
 				} else {
 					accessTimes[filename] = now;
-					console.log("[RELOAD]".green, filename);
+					console.log("[RELOAD]".cyan, filename);
 					loadHandler("get", path, routes.get[path]);					
 				}
 			}

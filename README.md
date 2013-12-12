@@ -1,11 +1,13 @@
-nodeplay
-========
+# nodeplay
 
 A web framework based on Express, like Play Framework, has hot reloading feature, without rebooting the server. It is just a proof of concept, many improvements are planned and on the way. 
 Welcome to hear suggestions.
 
-Adding Custom Routes
-====================
+## Installation and Running
+
+Just do a `npm install` to instal the dependencies, and then `node app` to launch your app. Default port is now `9000`. You can change the routes in `routes/` ffolder. See below for more details.
+
+## Adding Custom Routes
 
 Edit *routes.json* to fullfill your needs. You can add POST as well. 
 
